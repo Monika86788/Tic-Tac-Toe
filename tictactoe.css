@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+body{
+    background-color:#F5EBEB;
+}
+nav{
+    background-color:#A86464;
+    color:black;
+    height: 75px;
+    font-size:35px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:0 12px;
+    font-family: 'Chivo Mono', monospace;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+nav ul{
+    list-style-type: none;
+    
+}
+.gamecontainer{
+display: flex;
+justify-content: center;
+position:relative;
+
+}
+.container{
+display:grid;
+grid-template-columns: repeat(3,10vw);
+grid-template-rows: repeat(3,10vw);
+font-family: Arial, Helvetica, sans-serif;
+position: absolute; 
+top:100px;
+
+}
+.box{
+    border:2px solid black;
+    font-size: 5vw;
+    text-align: center;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: bisque;
+}
+.imgbox img{
+   width:0;
+   position: relative;
+   transition: width 1s ease-in-out;
+   left:300px;
+   bottom:50px;
+
+}
+
+
+.br-0{
+    border-right:0;
+}
+.bl-0{
+    border-left:0;
+}
+.bt-0{
+    border-top:0;
+}
+.bb-0{
+    border-bottom:0;
+}
+
+.gameinfo{
+    position:absolute;
+    margin:10px;
+    left:480px;
+}
+.info,#reset{
+    position: relative;
+    margin:5px;
+    font-size:25px;
+    color:#00235B
+ 
+}
+#reset{
+    background-color:#D8D8D8;
+}
